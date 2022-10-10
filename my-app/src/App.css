@@ -1,5 +1,27 @@
 .App {
   text-align: center;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.35fr repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.div1 { 
+  grid-area: 2 / 1 / 4 / 2; 
+  background-color: blue;
+  text-align: center;
+}
+.div2 {
+   grid-area: 2 / 2 / 4 / 3;
+   background-color: bisque; 
+   text-align: center;
+  }
+.div3 { 
+  grid-area: 1 / 1 / 2 / 3; 
+  background-color: aquamarine;
+  text-align: center;
 }
 
 .App-logo {
