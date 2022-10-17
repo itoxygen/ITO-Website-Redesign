@@ -30,7 +30,7 @@ If you're completely new to Web Development or just need a quick refresher on ho
 2. Clone our GitHub repo to wherever you want to store it 
 * open Command Prompt
 * cd to where you want to store the repo
-* enter `git clone https://github.com/ColinKnudsen/ITO-Web-Redesign.git` 
+* enter `git clone https://github.com/itoxygen/ITO-Website-Redesign.git` 
 * this will copy all of the remote file to your local machine
 
 3. Navigate into the App inside the Repo Folder
