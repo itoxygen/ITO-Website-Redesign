@@ -11,7 +11,7 @@ function App() {
            <div className="ContactUs-Discord">
             <button className="ContactUsButton">Contact Us</button>
             <div className="Spacer"></div>
-            <div className="JoinDiscord">Join Our Discord</div>
+            <a href="https://discord.gg/Tae8QmxcTt" className="JoinDiscord">Join Our Discord</a>
             <div className="RightArrowDiscord">➔</div>
            </div>
         </div>
