@@ -9,14 +9,15 @@
 }
 
 .div1 { 
+  /* left side */
   grid-area: 2 / 1 / 4 / 2; 
-  background-color: blue;
+  background-color: rgb(34,34,34);
   text-align: center;
 }
-
 .div2 {
+  /* right side */
    grid-area: 2 / 2 / 4 / 3;
-   background-color: bisque; 
+   background-color: rgb(34,34,34);
    text-align: center;
   }
 
