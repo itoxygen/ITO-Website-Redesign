@@ -7,20 +7,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-        <div className="div1">
-           <div className = "Welcome">Welcome to<br></br>the IT Oxygen<br></br>Enterprise.</div>
-           <div className = "JoinUs">Join us in person in Dillman 214 every Wednesday at 5pm.</div>
-           <div className="ContactUs-Discord">
-            <button className="ContactUsButton">Contact Us</button>
-            <div className="Spacer"></div>
-            <a href="https://discord.gg/Tae8QmxcTt" className="JoinDiscord">Join Our Discord</a>
-            <div className="RightArrowDiscord">➔</div>
-           </div>
-        </div>
-        <div className="div2">
-          Nick's Section
-        </div>
-        <div className="div3">
+         <div className="div3">
             <nav className="navigation_bar">
               <img src="ITOlogo.png" alt="ITO Logo" width="139" height="109"></img>
               <ul className="navigation_list">
@@ -38,6 +25,24 @@ function App() {
                 </li>
               </ul>
             </nav>
+        </div>
+        <div className="landingPageContent">
+          <div>
+            <div className = "Welcome">Welcome to<br></br>the IT Oxygen<br></br>Enterprise.</div>
+            <div className = "JoinUs">Join us in person in Dillman 214 every Wednesday at 5pm.</div>
+            <div className="ContactUs-Discord">
+              <button className="ContactUsButton">Contact Us</button>
+              <div className="Spacer"></div>
+              <a href="https://discord.gg/Tae8QmxcTt" target="_blank" className="JoinDiscord">Join Our Discord</a>
+              <div className="RightArrowDiscord">➔</div>
+            </div>
+            <div className ="quarterCircles">
+              <img src="landingArt.png" width="800" height="600"></img>
+            </div>
+          </div>
+          <div>
+
+          </div>
         </div>
     </div>
   );
