@@ -40,8 +40,18 @@ function App() {
               <img src="landingArt.png" width="800" height="600"></img>
             </div>
           </div>
-          <div>
-
+          <div className="landingPageRightSide">
+            <div className="mainArt">
+              <img src="mainArt.png" height="1000" width="1000"></img>
+            </div>
+            <div className="rightSideText">
+              <div className="studentRan">
+                Student Ran
+              </div>
+              <div className="studentRanDesc">
+                All teams and the enterprise itself are led by students.
+              </div>
+            </div>
           </div>
         </div>
     </div>
