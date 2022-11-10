@@ -10,6 +10,7 @@ function App() {
       <div className="div3">
         <nav className="navigation_bar">
           <img src="ITOlogo.png" alt="ITO Logo" width="139" height="109"></img>
+          <p></p>
           <ul className="navigation_list">
             <li className="navigation_list_item"><a href="#home">Home</a></li>
             <li className="navigation_list_item"><a href="#current_projects">Current Projects</a></li>
@@ -63,7 +64,7 @@ function App() {
 }
 
 function darkMode() {
-  document.getElementById("moon")?.replaceWith("lightmode.png");
+  
 }
 
 export default App;
