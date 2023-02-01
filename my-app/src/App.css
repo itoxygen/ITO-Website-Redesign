@@ -103,12 +103,16 @@
   text-align: center;
 }
 
-.MapImage {
-  background-image: image-set(url(/public/images/stars/stars1x.png) 1x,
-      url(/public/images/stars/stars1x.png) 2x,
-      url(/public/images/stars/stars1x.png) 3x,
-      url(/public/images/stars/stars1x.png) 4x);
-  background-repeat: no-repeat;
+.overlay1 {
+  position: absolute;
+  z-index: 2;
+}
+
+.overlay2 {
+  position: relative;
+  z-index: 1;
+  top: -12px;
+  left: -12px;
 }
 
 .InfoSection {

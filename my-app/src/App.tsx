@@ -43,7 +43,11 @@ function App() {
         </div>
         <div className="div2">
           <div className="MapImage">
-            <img src="/images/map/map1x.png" srcSet="/images/map/map2x.png 2x, /images/map/map3x.png 3x, /images/map/map4x.png 4x" />
+
+
+            <img className="overlay1" src="/images/map/map1x.png"></img>
+            <img className="overlay2" src="/images/stars/stars1x.png"></img>
+
           </div>
           <div className="InfoSection">
             <div className="column">
