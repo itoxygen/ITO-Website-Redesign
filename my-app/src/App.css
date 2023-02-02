@@ -151,6 +151,7 @@
   background-color:rgb(34, 34, 34);
   background: linear-gradient(0deg, rgba(34,34,34,1) 0%, rgba(0,0,0,1) 60%);
   text-align: center;
+  z-index: 3; /*Fixes small issue where grid and map overlap navigation bar text*/
 }
 
 .navigation_bar {
