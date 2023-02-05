@@ -63,6 +63,14 @@ function App() {
           </div>
         </div>
       </div>
+      <div className="page2">
+          <div className="animatedBanner"> 
+            Animated Banner (Noah Y/Noah 2)
+          </div>
+          <div className="projectList"> 
+            Current Projects List (Noah V/Noah 1 and Josh)
+          </div>
+      </div>
     </div>
   );
 }
