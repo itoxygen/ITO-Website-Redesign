@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <div className="div3">
         <nav className="navigation_bar">
-          <img src="ITOlogo.png" alt="ITO Logo" width="139" height="109"></img>
+          <img className="navigation_logo" src="ITOlogo.png" alt="ITO Logo" width="139" height="109"></img>
           <p></p>
           <ul className="navigation_list">
             <li className="navigation_list_item"><a href="#home">Home</a></li>
@@ -64,19 +64,55 @@ function App() {
         </div>
       </div>
       <div className="page2">
-          <div className="animatedBanner"> 
+        <div className="animatedBanner"> 
             Animated Banner (Noah Y/Noah 2)
-          </div>
-          <div className="projectList"> 
-            Current Projects List (Noah V/Noah 1 and Josh)
-          </div>
-      </div>
+        </div>
+
+        <div className="projectList"> 
+          <br></br>
+            <div className="projectLeftIndent">
+              <img id="moon" src="darkmode.png" alt="TEMPORARY PLACEHOLDER" width="185px"></img>
+              <h2>IT Oxygen Website</h2>
+              <p>Team Lead: Colin Knudsen</p>
+              <p>Description: This project is... what you're looking at.</p>
+              <p>Extra text field (or spacer)</p>
+            </div>
+
+            <div className="projectRightIndent">
+              <img id="moon" src="darkmode.png" alt="TEMPORARY PLACEHOLDER" width="185px"></img>
+              <h2>Project Title 2</h2>
+              <p>Text field 2</p>
+              <p>Text field 3</p>
+              <p>Extra text field (or spacer)</p>
+            </div>
+
+            <div className="projectLeftIndent">
+              <img id="moon" src="darkmode.png" alt="TEMPORARY PLACEHOLDER" width="185px"></img>
+              <h2>Project Title 3</h2>
+              <p>Text field 2</p>
+              <p>Text field 3</p>
+              <p>Extra text field (or spacer)</p>
+            </div>
+
+            <div className="projectRightIndent">
+              <img id="moon" src="darkmode.png" alt="TEMPORARY PLACEHOLDER" width="185px"></img>
+              <h2>Project Title 4</h2>
+              <p>Text field 2</p>
+              <p>Text field 3</p>
+              <p>Extra text field (or spacer)</p>
+            </div>
+
+
+
+
+        </div>
+     </div>
     </div>
   );
 }
 
 function darkMode() {
-  
+
 }
 
 export default App;
