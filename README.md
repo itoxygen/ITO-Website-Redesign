@@ -1,3 +1,5 @@
+Latest deploy: [![Netlify Status](https://api.netlify.com/api/v1/badges/8e17464a-1fea-4873-a8f3-9695ebe108db/deploy-status)](https://app.netlify.com/sites/itoxygen/deploys)
+
 # ITO-Web-Redesign
 
 ## Objectives (for now)
