@@ -63,11 +63,12 @@ function App() {
           </div>
         </div>
       </div>
+      <a id="current_projects"></a>
       <div className="page2">
         <div className="animatedBanner"> 
             Animated Banner (Noah Y/Noah 2)
-        </div>
 
+        </div>
         <div className="projectList"> 
           <br></br>
             <div className="projectLeftIndent">

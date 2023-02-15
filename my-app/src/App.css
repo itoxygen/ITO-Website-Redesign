@@ -179,7 +179,12 @@
   /*Adjusts the navigation items (excluding login and signup) toward the center more.*/
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .navigation_list_item {
+  scroll-behavior: smooth;
   list-style: none;
   /*Removes the dots in the front of each list item.*/
   display: inline-block;
