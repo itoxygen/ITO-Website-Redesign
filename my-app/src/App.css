@@ -8,6 +8,13 @@
   grid-row-gap: 0px; */
 }
 
+.joe {
+  z-index: 100;;
+  background-color:red;
+  height: 100px;
+  width: 100px;
+}
+
 .landingPageContent {
   /* margin-top: -20vh; */
   background-color: rgb(34, 34, 34);
@@ -32,6 +39,28 @@
   line-height: 1.4;
   text-align: left;
 }
+
+/*Noah V's animation stuff \/\/\/\/\/*/
+
+
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
+  }
+  to {
+    background-position: -200% center;
+  }
+}
+
+.ColorWoah {
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(to left, blue, aqua, blue);
+  background-size:200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
+/*Noah V's animation stuff ^^^^^*/
 
 .JoinUs {
   text-align: left;

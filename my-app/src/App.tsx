@@ -1,3 +1,4 @@
+import styled from '@emotion/styled';
 import { color } from '@mui/system';
 import React from 'react';
 import { mockComponent } from 'react-dom/test-utils';
@@ -6,7 +7,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" id="joe">
       <div className="div3">
         <nav className="navigation_bar">
           <img className="navigation_logo" src="ITOlogo.png" alt="ITO Logo" width="139" height="109"></img>
@@ -29,7 +30,7 @@ function App() {
       </div>
       <div className="landingPageContent">
         <div className="div1">
-          <div className="Welcome">Welcome to<br></br>the IT Oxygen<br></br>Enterprise.</div>
+          <div className="Welcome"><p>Welcome to<br></br>the <span className="ColorWoah">IT Oxygen</span><br></br>Enterprise.</p></div>
           <div className="JoinUs">Join us in person in Dillman 214 every Wednesday at 5pm.</div>
           <div className="ContactUs-Discord">
             <button className="ContactUsButton">Contact Us</button>
@@ -103,17 +104,23 @@ function App() {
               <p>Extra text field (or spacer)</p>
             </div>
 
-
-
-
+            <div className="joe" id="joe">werwer</div>
         </div>
      </div>
     </div>
   );
 }
 
-function darkMode() {
 
-}
+
+
+
+
+
+
+
+
+
+
 
 export default App;
