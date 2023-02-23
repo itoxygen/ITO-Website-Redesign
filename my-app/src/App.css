@@ -9,10 +9,44 @@
 }
 
 .joe {
-  z-index: 100;;
-  background-color:red;
-  height: 100px;
-  width: 100px;
+  background: linear-gradient(
+    to right,
+    aqua,
+    blue
+  );
+  height: 300px;
+  position: fixed;
+  aspect-ratio: 1;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  animation: rotate 10s infinite;
+  filter: blur(100px);
+  opacity: 50%;
+  z-index: 1;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    scale: 1 1.5;
+  }
+
+  50% {
+    scale: 1.25 1.25;
+  }
+
+  75% {
+    scale: 1.5 1;
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .landingPageContent {
@@ -38,6 +72,8 @@
   font-weight: 500;
   line-height: 1.4;
   text-align: left;
+  position: relative;
+  z-index: 2;
 }
 
 /*Noah V's animation stuff \/\/\/\/\/*/
@@ -88,11 +124,13 @@
   font-weight: 600;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 15px;
+  z-index:2;
 }
 
 .ContactUsButton:hover {
   cursor: pointer;
   background-color: rgb(27, 25, 25);
+  z-index:2;
 }
 
 .Spacer {
@@ -106,6 +144,7 @@
   font-weight: 600;
   color: white;
   text-decoration: none;
+  z-index:2;
 }
 
 .RightArrowDiscord {
@@ -114,6 +153,7 @@
   font-size: 20px;
   font-weight: 300;
   color: white;
+  z-index:2;
 }
 
 .JoinDiscord:hover,
@@ -123,6 +163,8 @@
 
 .quarterCircles {
   padding-top: 30px;
+  position:relative;
+  z-index:2;
 }
 
 .div2 {
@@ -134,12 +176,12 @@
 
 .overlay1 {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
 }
 
 .overlay2 {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   top: -12px;
   left: -12px;
 }
@@ -161,6 +203,9 @@
   line-height: 36px;
   text-align: left;
   color: #FFFFFF;
+
+  position: relative;
+  z-index:2;
 }
 
 .InfoContents {
@@ -180,7 +225,7 @@
   background-color:rgb(34, 34, 34);
   background: linear-gradient(0deg, rgba(34,34,34,1) 0%, rgba(0,0,0,1) 60%);
   text-align: center;
-  z-index: 3; /*Fixes small issue where grid and map overlap navigation bar text*/
+   /*Fixes small issue where grid and map overlap navigation bar text*/
 }
 
 .navigation_bar {
@@ -197,6 +242,7 @@
   position: fixed;
   backdrop-filter: blur(3px);
   width: 100%;
+  z-index:10;
 }
 
 .navigation_logo {
@@ -312,6 +358,8 @@ html {
   margin-right: 400px;
   text-align: justify;
   text-indent: 75px;
+  position:relative;
+  z-index: 2;
 }
 
 /* Float images inside the container to the left. Add a right margin, and style the image as a circle */
@@ -319,6 +367,7 @@ html {
   float: right;
   margin-right: 20px;
   border-radius: 50%;
+  z-index: 2;
 }
 
 /* Style the container with a rounded border, grey background and some padding and margin */
@@ -332,6 +381,8 @@ html {
   margin-right: -40px;
   text-align: justify;
   text-indent: 45px;
+  position:relative;
+  z-index: 2;
 }
 
 /* Float images inside the container to the left. Add a right margin, and style the image as a circle */
@@ -339,4 +390,5 @@ html {
   float: right;
   margin-right: 50px;
   border-radius: 50%;
+  z-index: 2;
 }

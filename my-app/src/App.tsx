@@ -7,7 +7,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App" id="joe">
+    <div className="App">
       <div className="div3">
         <nav className="navigation_bar">
           <img className="navigation_logo" src="ITOlogo.png" alt="ITO Logo" width="139" height="109"></img>
@@ -103,10 +103,11 @@ function App() {
               <p>Text field 3</p>
               <p>Extra text field (or spacer)</p>
             </div>
-
-            <div className="joe" id="joe">werwer</div>
         </div>
      </div>
+     
+     <div className="joe" id="joe"></div>
+     
     </div>
   );
 }
@@ -116,11 +117,15 @@ function App() {
 
 
 
-
-
-
-
-
+window.onload = function(){ 
+  document.addEventListener('pointermove', function(e) {
+    let joe = document.getElementById('joe');
+    let left = e.clientX;
+    let top = e.clientY;
+    joe!.style.left = left + 'px';
+    joe!.style.top = top + 'px';
+  })
+};
 
 
 export default App;
