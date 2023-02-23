@@ -2,10 +2,12 @@ import styled from '@emotion/styled';
 import { color } from '@mui/system';
 import React from 'react';
 import { mockComponent } from 'react-dom/test-utils';
+import { useState } from 'react';
 import './App.css';
 
-
 function App() {
+
+  const [isShown, setIsShown] = useState(false);
   return (
     <div className="App">
       <div className="div3">
@@ -72,7 +74,7 @@ function App() {
         </div>
         <div className="projectList"> 
           <br></br>
-            <div className="projectLeftIndent">
+            <div className="projectLeftIndent"  onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}>
               <img id="moon" src="darkmode.png" alt="TEMPORARY PLACEHOLDER" width="185px"></img>
               <h2>IT Oxygen Website</h2>
               <p>Team Lead: Colin Knudsen</p>
@@ -107,7 +109,13 @@ function App() {
      </div>
      
      <div className="joe" id="joe"></div>
-     
+
+     {isShown && (<div className="popup" onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}>
+      <div className="popup_backdrop"></div>
+     </div>)}
+
+
+
     </div>
   );
 }
@@ -126,6 +134,7 @@ window.onload = function(){
     joe!.style.top = top + 'px';
   })
 };
+
 
 
 export default App;
