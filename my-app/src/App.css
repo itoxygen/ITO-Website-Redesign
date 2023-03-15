@@ -14,7 +14,7 @@
     aqua,
     blue
   );
-  height: 50px;
+  height: 200px;
   position: fixed;
   aspect-ratio: 1;
   left: 50%;
@@ -22,7 +22,7 @@
   translate: -50% -50%;
   border-radius: 50%;
   animation: rotate 10s infinite;
-  filter: blur(10px);
+  filter: blur(50px);
   opacity: 50%;
   z-index: 1;
 }
@@ -45,14 +45,6 @@
 
 
 
-.popup {
-  height: 500px;
-  width: 100%;
-  background-color: green;
-  position: absolute;
-  top: 210%;
-  right: 25%;
-}
 
 
 .landingPageContent {
@@ -368,6 +360,8 @@ html {
   z-index: 2;
 }
 
+
+
 /* Float images inside the container to the left. Add a right margin, and style the image as a circle */
 .projectLeftIndent img {
   float: right;
@@ -381,12 +375,12 @@ html {
   border: 5px solid #ccc;
   background-color:aquamarine;
   border-radius: 25px;
-  padding: 16px;
-  margin: 50px;
+  /*padding: 16px;*/
+  padding-left:40px;
   margin-left: 400px;
   margin-right: -40px;
   text-align: justify;
-  text-indent: 45px;
+  text-indent: -50px;
   position:relative;
   z-index: 2;
 }
@@ -397,4 +391,63 @@ html {
   margin-right: 50px;
   border-radius: 50%;
   z-index: 2;
+}
+
+.project_list_item {
+  scroll-behavior: smooth;
+  list-style: none;
+  /*Removes the dots in the front of each list item.*/
+  display: inline-block;
+  /*Sets the list items horizontal.*/
+  padding: 0px 20px;
+  /*Adds some distance between each navigation item.*/
+  vertical-align: middle;
+  line-height: 0px;
+  margin-left: 100px; 
+}
+
+.project_button {
+  height: 60px;
+  width: 200px;
+  border-radius: 20px;
+  border-width: 3px;
+  border-color: gray;
+  animation: background-pan 3s linear infinite;
+  background: gray;
+  background-size:200%;
+  letter-spacing: 2px;
+  font-size: 20px;
+  cursor: pointer;
+  font-style:oblique;
+}
+
+
+.popup {
+  height: 500px;
+  width: 50%;
+  margin-left: 25%;
+  background-color: gray;
+  position: absolute;
+  top: 210%;
+  z-index: 3;
+}
+
+.popup_backdrop img {
+  float: right;
+  margin-right: 30px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.popup_backdrop  b {
+  float: left;
+  font-size: xx-small;
+  position: relative;
+}
+
+.popup_backdrop  p {
+  float: left;
+  margin-right: 100px;
+  font-size: medium;
+  position: relative;
 }

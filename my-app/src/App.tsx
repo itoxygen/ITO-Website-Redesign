@@ -99,20 +99,41 @@ function App() {
             </div>
 
             <div className="projectRightIndent">
-              <img id="moon" src="darkmode.png" alt="TEMPORARY PLACEHOLDER" width="185px"></img>
-              <h2>Project Title 4</h2>
-              <p>Text field 2</p>
-              <p>Text field 3</p>
-              <p>Extra text field (or spacer)</p>
+              <ul className="project_list">
+                <li className="project_list_item">
+                  <h2>IT Oxygen Website</h2>
+                  <br></br>
+                  <p>Team Lead: Colin Knudsen</p>
+                  <br></br>
+                  <p>We are redesigning the website you are looking at!</p>
+                  <br></br>
+                  <p>This project will be completed by Spring 2023.</p>
+                </li>
+                <li className="project_list_item"><button className="project_button">Information</button></li>
+                <li className="project_list_item"><img id="moon" src="darkmode.png" alt="TEMPORARY PLACEHOLDER" width="185px"></img></li>
+              </ul>
+              
             </div>
         </div>
      </div>
      
      <div className="joe" id="joe"></div>
 
-     {isShown && (<div className="popup" onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}>
-      <div className="popup_backdrop"></div>
-     </div>)}
+     {isShown &&
+     (<div className="popup" onMouseEnter={() => setIsShown(true)} onMouseLeave={() => setIsShown(false)}> 
+        <div className="popup_backdrop">
+            <img id="moon" src="darkmode.png" alt="TEMPORARY PLACEHOLDER" width="185px"></img>
+            <h2>IT Oxygen Website</h2>
+            <p>Team Lead: Colin Knudsen</p>
+            <p>Description: This project is... what you're looking at.</p>
+            <p>Extra text field (or spacer)</p>
+          <br></br>
+            <b> 
+
+            </b>
+        </div>
+      </div>
+    )}
 
 
 
