@@ -38,7 +38,7 @@ function App() {
         </div>
         <div className="flex-child">
           <div>
-            <button className = "lightdark" onClick={()=>setShow(!show)}>Toggle Dark Mode</button>
+            <button className = "lightdark" onClick={()=>setShow(!show)}>Toggle <br></br>Dark Mode</button>
           </div>
         </div>
       </div>
