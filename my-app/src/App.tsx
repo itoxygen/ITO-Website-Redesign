@@ -24,8 +24,7 @@ function App() {
 
     <header className="viewport-header">
       <h1>
-        <span>Explore </span>
-        <span>Montana</span>
+        <div className="Welcome"><p>Welcome to the <span className="ColorWoah">IT Oxygen </span>Enterprise.</p></div>
       </h1>
     </header>
 
